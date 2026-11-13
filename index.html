@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ram Cleaning Services Ltd | Complete Cleaning and Maintenance Care in Calgary since 1967</title>
+<meta name="description" content="Ram Cleaning Services Ltd: carpet, upholstery and area rug, furnace and duct, window cleaning and power washing for homes and businesses in Calgary and area since 1967.">
+<meta name="theme-color" content="#1E1A16">
+<link rel="icon" href="images/ram-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --orange:#F8962A;
+  --orange-deep:#E07A0E;
+  --orange-soft:#FDE8CF;
+  --ink:#1E1A16;
+  --ink-2:#2B2621;
+  --cream:#F7F2EA;
+  --paper:#FFFDF9;
+  --line:#E6DCCD;
+  --muted:#6E655B;
+  --serif:'Young Serif',Georgia,serif;
+  --sans:'Figtree',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--ink);background:var(--cream);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1240px,92vw);margin:0 auto}
+.eyebrow{font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:var(--orange-deep)}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.08;letter-spacing:-.01em}
+.btn{display:inline-flex;align-items:center;gap:.6rem;font-weight:700;font-size:.98rem;padding:1rem 1.5rem;border-radius:4px;transition:.25s;cursor:pointer;border:0;font-family:var(--sans)}
+.btn-orange{background:var(--orange);color:var(--ink)}
+.btn-orange:hover{background:var(--ink);color:var(--orange)}
+.btn-line{border:1.5px solid var(--ink);color:var(--ink)}
+.btn-line:hover{background:var(--ink);color:var(--cream)}
+.btn svg{width:18px;height:18px}
+
+/* utility */
+.util{background:var(--ink);color:#D9CFC2;font-size:.85rem}
+.util .wrap{display:flex;justify-content:space-between;align-items:center;padding:.55rem 0;gap:1rem}
+.util b{color:var(--orange)}
+.util a:hover{color:#fff}
+
+/* header */
+header.site{position:sticky;top:0;z-index:50;background:rgba(247,242,234,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;height:84px}
+.logo img{height:56px;width:auto}
+nav.main{display:flex;gap:2.1rem;font-weight:600;font-size:.96rem}
+nav.main a{position:relative;padding:.3rem 0}
+nav.main a::after{content:"";position:absolute;left:0;bottom:-2px;height:2px;width:0;background:var(--orange);transition:.25s}
+nav.main a:hover::after{width:100%}
+.head-cta{display:flex;align-items:center;gap:1.2rem}
+.head-phone{font-weight:800;font-size:1.02rem}
+.head-phone small{display:block;font-weight:500;font-size:.72rem;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
+.burger{display:none;background:none;border:0;width:42px;height:42px;cursor:pointer}
+.burger span{display:block;height:2px;background:var(--ink);margin:6px 8px}
+
+/* hero */
+.hero{position:relative;padding:4.5rem 0 0;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.02fr 1fr;gap:3.5rem;align-items:end}
+.hero-copy{padding-bottom:4.5rem}
+.hero-frame{border:1.5px solid var(--orange);padding:1.6rem 1.8rem 1.8rem;margin:1.4rem 0 1.6rem;position:relative}
+.hero-frame::before{content:"EST. 1967";position:absolute;top:-.7rem;left:1.4rem;background:var(--cream);padding:0 .6rem;font-size:.72rem;font-weight:800;letter-spacing:.2em;color:var(--orange-deep)}
+.hero h1{font-size:clamp(2.6rem,5.2vw,4.5rem)}
+.hero h1 em{font-style:normal;color:var(--orange-deep);display:block}
+.hero p.lead{font-size:1.12rem;color:#463F37;max-width:34rem}
+.hero-actions{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.8rem}
+.hero-proof{display:flex;gap:1.6rem;flex-wrap:wrap;margin-top:2rem;font-size:.9rem;font-weight:600;color:#463F37}
+.hero-proof span{display:flex;align-items:center;gap:.45rem}
+.hero-proof i{width:8px;height:8px;background:var(--orange);display:inline-block;transform:rotate(45deg)}
+.hero-visual{position:relative;align-self:stretch;min-height:560px}
+.hero-visual .photo{position:absolute;inset:0 0 0 0;clip-path:polygon(14% 0,100% 0,100% 100%,0 100%,0 18%);overflow:hidden}
+.hero-visual .photo img{width:100%;height:100%;object-fit:cover}
+.picker{position:absolute;left:-2.5rem;bottom:2.5rem;background:var(--paper);width:min(340px,80%);padding:1.4rem;box-shadow:0 24px 60px -20px rgba(30,26,22,.4);border-top:4px solid var(--orange)}
+.picker h4{font-family:var(--serif);font-weight:400;font-size:1.25rem;margin-bottom:.8rem}
+.picker-toggle{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);margin-bottom:1rem}
+.picker-toggle button{border:0;background:none;padding:.65rem;font-family:var(--sans);font-weight:700;font-size:.88rem;cursor:pointer;color:var(--muted)}
+.picker-toggle button.on{background:var(--ink);color:var(--orange)}
+.picker ul{list-style:none;display:grid;gap:.15rem;max-height:182px;overflow:auto}
+.picker li a{display:flex;justify-content:space-between;padding:.48rem .2rem;border-bottom:1px dashed var(--line);font-size:.92rem;font-weight:500}
+.picker li a:hover{color:var(--orange-deep)}
+.picker li a::after{content:"→";color:var(--orange)}
+
+/* ticker */
+.ticker{background:var(--orange);overflow:hidden;border-block:2px solid var(--ink)}
+.ticker-track{display:flex;gap:2.4rem;padding:1rem 0;white-space:nowrap;animation:tick 38s linear infinite;width:max-content}
+.ticker-track span{font-family:var(--serif);font-size:1.35rem;display:flex;align-items:center;gap:2.4rem}
+.ticker-track span::after{content:"✳";font-family:var(--sans);font-size:1rem}
+@keyframes tick{to{transform:translateX(-50%)}}
+
+/* core services accordion */
+section{padding:6.5rem 0}
+.sec-head{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:end;margin-bottom:3rem}
+.sec-head h2{font-size:clamp(2.1rem,3.8vw,3.3rem)}
+.sec-head p{color:var(--muted);font-size:1.05rem;max-width:30rem}
+.core{display:flex;gap:.8rem;height:540px}
+.core-item{position:relative;flex:1;overflow:hidden;transition:flex .6s cubic-bezier(.2,.8,.2,1);cursor:pointer;background:var(--ink)}
+.core-item.active{flex:3.4}
+.core-item img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.78;transition:.6s}
+.core-item.active img{opacity:.92}
+.core-item::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(30,26,22,0) 35%,rgba(30,26,22,.92))}
+.core-num{position:absolute;top:1.2rem;left:1.2rem;z-index:2;font-weight:800;color:var(--orange);font-size:.85rem;letter-spacing:.15em}
+.core-label{position:absolute;z-index:2;left:1.2rem;bottom:1.4rem;right:1.2rem;color:#fff}
+.core-label h3{font-size:1.5rem;writing-mode:vertical-rl;transform:rotate(180deg);transition:.3s;white-space:nowrap}
+.core-item.active .core-label h3{writing-mode:horizontal-tb;transform:none;font-size:2.1rem;white-space:normal}
+.core-body{max-height:0;opacity:0;overflow:hidden;transition:.5s}
+.core-item.active .core-body{max-height:220px;opacity:1;margin-top:.7rem}
+.core-body p{color:#E9E0D4;font-size:.98rem;max-width:30rem}
+.core-body a{display:inline-block;margin-top:.9rem;font-weight:700;color:var(--orange);border-bottom:1.5px solid var(--orange)}
+
+/* protection */
+.protect{background:var(--ink);color:#EDE5DA;position:relative;overflow:hidden}
+.protect-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:4.5rem;align-items:center}
+.protect h2{font-size:clamp(2.2rem,4vw,3.5rem);color:#fff}
+.protect h2 span{color:var(--orange)}
+.protect .intro{margin:1.3rem 0 2rem;color:#BFB4A6;font-size:1.06rem;max-width:32rem}
+.protect-photo{position:relative;margin-top:1rem}
+.protect-photo img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.protect-photo::before{content:"";position:absolute;inset:1.2rem -1.2rem -1.2rem 1.2rem;border:1.5px solid var(--orange);z-index:0}
+.protect-photo img{position:relative;z-index:1}
+.cert{background:var(--paper);color:var(--ink);padding:2.6rem;position:relative;outline:1.5px dashed #CDBFAA;outline-offset:-14px}
+.cert-top{display:flex;justify-content:space-between;align-items:flex-start;border-bottom:1px solid var(--line);padding-bottom:1.2rem;margin-bottom:1.2rem}
+.cert-top h3{font-size:1.65rem}
+.cert-top small{display:block;font-family:var(--sans);font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:var(--muted);margin-bottom:.3rem}
+.seal{width:104px;height:104px;border-radius:50%;background:var(--orange);display:grid;place-items:center;text-align:center;flex:none;position:relative;transform:rotate(-8deg);box-shadow:inset 0 0 0 5px var(--orange),inset 0 0 0 7px var(--ink)}
+.seal b{font-family:var(--serif);font-size:1.9rem;line-height:1;display:block;font-weight:400}
+.seal span{font-size:.6rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+.cert ol{list-style:none;counter-reset:c}
+.cert li{counter-increment:c;display:grid;grid-template-columns:2.4rem 1fr;padding:.72rem 0;border-bottom:1px dotted var(--line);font-weight:600}
+.cert li::before{content:counter(c,decimal-leading-zero);color:var(--orange-deep);font-weight:800;font-size:.85rem;padding-top:.1rem}
+.cert li:last-child{border:0}
+.cert-foot{display:flex;justify-content:space-between;align-items:center;margin-top:1.4rem;padding-top:1.2rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);gap:1rem;flex-wrap:wrap}
+.cor{display:flex;align-items:center;gap:.6rem;font-weight:700;color:var(--ink)}
+.cor i{width:38px;height:38px;border:2px solid var(--ink);display:grid;place-items:center;font-style:normal;font-size:.68rem;font-weight:800;border-radius:50%}
+
+/* services index */
+.index{background:var(--paper)}
+.tabs{display:flex;gap:0;border-bottom:1px solid var(--line);margin-bottom:2.6rem;overflow-x:auto}
+.tabs button{background:none;border:0;font-family:var(--serif);font-size:1.5rem;padding:1rem 1.6rem 1rem 0;margin-right:1.6rem;color:#B4A895;cursor:pointer;position:relative;white-space:nowrap}
+.tabs button.on{color:var(--ink)}
+.tabs button.on::after{content:"";position:absolute;left:0;right:1.6rem;bottom:-1px;height:3px;background:var(--orange)}
+.tabs button sup{font-family:var(--sans);font-size:.72rem;font-weight:700;color:var(--orange-deep);margin-left:.3rem}
+.panel{display:none;grid-template-columns:1.25fr .75fr;gap:3.5rem}
+.panel.on{display:grid}
+.rows{list-style:none;columns:2;column-gap:2.5rem}
+.rows li{break-inside:avoid}
+.rows a{display:grid;grid-template-columns:2.6rem 1fr auto;align-items:center;padding:1.05rem 0;border-bottom:1px solid var(--line);font-weight:600;font-size:1.06rem;transition:.25s}
+.rows a span{font-size:.8rem;color:var(--orange-deep);font-weight:800}
+.rows a em{font-style:normal;color:var(--orange);opacity:0;transform:translateX(-8px);transition:.25s}
+.rows a:hover{padding-left:.5rem;color:var(--orange-deep)}
+.rows a:hover em{opacity:1;transform:none}
+.rows small{display:block;font-size:.84rem;color:var(--muted);font-weight:500}
+.panel-side{background:var(--cream);padding:2rem;align-self:start;border-left:4px solid var(--orange)}
+.panel-side img.ph{width:100%;aspect-ratio:16/10;object-fit:cover;margin-bottom:1.3rem}
+.panel-side img.ic{width:64px;margin-bottom:1rem}
+.panel-side h4{font-family:var(--serif);font-weight:400;font-size:1.45rem;margin-bottom:.5rem}
+.panel-side p{color:var(--muted);margin-bottom:1.3rem}
+
+/* heritage */
+.heritage .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:4rem;align-items:center}
+.year{font-family:var(--serif);font-size:clamp(7rem,17vw,15rem);line-height:.82;color:transparent;-webkit-text-stroke:2px var(--orange-deep);letter-spacing:-.04em}
+.year-row{display:flex;align-items:flex-end;gap:1.6rem;flex-wrap:wrap}
+.year-count{padding-bottom:1.2rem}
+.year-count b{font-family:var(--serif);font-weight:400;font-size:3.3rem;line-height:1;display:block}
+.year-count span{font-size:.85rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.heritage h2{font-size:clamp(2rem,3.4vw,2.9rem);margin:1.6rem 0 1rem}
+.heritage p{color:#4B443C;font-size:1.06rem;max-width:36rem}
+.heritage-photo{position:relative}
+.heritage-photo img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.heritage-photo img{clip-path:polygon(0 0,100% 0,100% 86%,86% 100%,0 100%)}
+.heritage-tag{position:absolute;left:-1.4rem;top:1.6rem;background:var(--ink);color:#fff;padding:.9rem 1.2rem;font-weight:700;font-size:.9rem}
+.heritage-tag b{color:var(--orange)}
+
+/* testimonials */
+.voices{background:var(--orange-soft) url('images/bg-testimonial.png');position:relative}
+.voices::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(253,232,207,.86),rgba(253,232,207,.94))}
+.voices .wrap{position:relative}
+.voices-head{display:flex;justify-content:space-between;align-items:end;gap:2rem;margin-bottom:2.6rem;flex-wrap:wrap}
+.voices-head h2{font-size:clamp(2.1rem,3.8vw,3.2rem);max-width:40rem}
+.arrows{display:flex;gap:.6rem}
+.arrows button{width:52px;height:52px;border:1.5px solid var(--ink);background:none;cursor:pointer;font-size:1.2rem;transition:.2s}
+.arrows button:hover{background:var(--ink);color:var(--orange)}
+.track{display:grid;grid-auto-flow:column;grid-auto-columns:min(420px,82vw);gap:1.4rem;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:1rem;scrollbar-width:none}
+.track::-webkit-scrollbar{display:none}
+.quote{scroll-snap-align:start;background:var(--paper);padding:2.2rem;display:flex;flex-direction:column;justify-content:space-between;min-height:300px;border-bottom:4px solid var(--ink)}
+.quote .mark{font-family:var(--serif);font-size:4.5rem;line-height:.6;color:var(--orange);height:2rem}
+.quote blockquote{font-family:var(--serif);font-size:1.5rem;line-height:1.3;margin:1rem 0 1.3rem}
+.quote p{color:var(--muted);font-size:.95rem}
+.quote cite{font-style:normal;font-weight:800;display:flex;justify-content:space-between;align-items:center;margin-top:1.4rem;padding-top:1rem;border-top:1px solid var(--line)}
+.quote cite span{font-weight:600;color:var(--muted);font-size:.85rem}
+.stars{color:var(--orange-deep);letter-spacing:.15em}
+
+/* estimate */
+.estimate .wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:0;box-shadow:0 30px 80px -40px rgba(30,26,22,.5)}
+.est-side{background:var(--ink);color:#E8DFD3;padding:3.2rem}
+.est-side h2{font-size:clamp(2rem,3.4vw,2.8rem);color:#fff;margin:.8rem 0 1rem}
+.est-side p{color:#BFB4A6}
+.contact-list{list-style:none;margin-top:2.2rem;display:grid;gap:1.3rem}
+.contact-list li{display:grid;grid-template-columns:46px 1fr;gap:1rem;align-items:center}
+.contact-list i{width:46px;height:46px;display:grid;place-items:center;border:1.5px solid var(--orange);color:var(--orange);font-style:normal}
+.contact-list i svg{width:20px;height:20px}
+.contact-list small{display:block;font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:#9C9184;font-weight:700}
+.contact-list b{color:#fff;font-size:1.08rem}
+.map{margin-top:2.2rem;filter:grayscale(1) contrast(1.05);border:0;width:100%;height:200px}
+form.est{background:var(--paper);padding:3.2rem;display:grid;grid-template-columns:1fr 1fr;gap:1.1rem 1.3rem;align-content:start}
+form.est h3{grid-column:1/-1;font-size:1.7rem;margin-bottom:.4rem}
+.field{display:flex;flex-direction:column;gap:.4rem}
+.field.full{grid-column:1/-1}
+.field label{font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.field input,.field select,.field textarea{font-family:var(--sans);font-size:1rem;padding:.9rem 1rem;border:1px solid var(--line);background:var(--cream);border-radius:2px;outline:none;transition:.2s;color:var(--ink)}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--orange);background:#fff}
+.seg{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line)}
+.seg label{text-transform:none;letter-spacing:0;font-size:.95rem;padding:.85rem;text-align:center;cursor:pointer;color:var(--ink);font-weight:600}
+.seg input{display:none}
+.seg input:checked+label{background:var(--ink);color:var(--orange)}
+form.est .btn{grid-column:1/-1;justify-content:center;padding:1.15rem}
+.form-note{grid-column:1/-1;font-size:.85rem;color:var(--muted)}
+
+/* footer */
+footer{background:#15120F;color:#A79C8E;padding:5rem 0 0;margin-top:6.5rem}
+.foot-top{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr 1.1fr;gap:2.4rem;padding-bottom:3.5rem;border-bottom:1px solid #2E2822}
+.foot-top img{height:60px;width:auto;margin-bottom:1.2rem}
+.foot-top p{font-size:.95rem}
+.foot-top h5{color:#fff;font-size:.82rem;letter-spacing:.16em;text-transform:uppercase;margin-bottom:1.1rem}
+.foot-top ul{list-style:none;display:grid;gap:.55rem;font-size:.94rem}
+.foot-top a:hover{color:var(--orange)}
+.social{display:flex;gap:.6rem;margin-top:1.3rem}
+.social a{width:40px;height:40px;border:1px solid #3A332C;display:grid;place-items:center;transition:.2s}
+.social a:hover{background:var(--orange);border-color:var(--orange);color:var(--ink)}
+.social svg{width:17px;height:17px}
+.foot-bot{display:flex;justify-content:space-between;align-items:center;padding:1.5rem 0;font-size:.86rem;gap:1rem;flex-wrap:wrap}
+.foot-bot nav{display:flex;gap:1.4rem}
+.foot-bot a:hover{color:var(--orange)}
+.credit a{color:var(--orange);font-weight:700}
+
+.mobile-bar{display:none}
+.mnav{display:none}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease}
+.rv.in{opacity:1;transform:none}
+
+@media (max-width:1080px){
+  nav.main,.head-phone{display:none}
+  .burger{display:block}
+  .mnav.open{display:flex;flex-direction:column;position:fixed;top:84px;left:0;right:0;background:var(--cream);padding:1.4rem 4vw 2rem;border-bottom:1px solid var(--line);z-index:49;gap:.2rem}
+  .mnav a{padding:.85rem 0;border-bottom:1px solid var(--line);font-weight:600}
+  .hero-grid,.protect-grid,.heritage .wrap,.estimate .wrap,.sec-head,.panel{grid-template-columns:1fr}
+  .hero-copy{padding-bottom:0}
+  .hero-visual{min-height:460px;margin:0 -4vw}
+  .picker{left:4vw;bottom:1.5rem}
+  .core{flex-direction:column;height:auto}
+  .core-item{flex:none;height:110px}
+  .core-item.active{height:400px;flex:none}
+  .core-label h3{writing-mode:horizontal-tb;transform:none}
+  .foot-top{grid-template-columns:1fr 1fr}
+}
+@media (max-width:640px){
+  .util .addr{display:none}
+  .util{font-size:.76rem}
+  .head-cta .btn{display:none}
+  .logo img{height:48px}
+  .hero{padding-top:2.5rem}
+  section{padding:4.5rem 0}
+  .rows{columns:1}
+  form.est{grid-template-columns:1fr;padding:2rem}
+  .est-side{padding:2.2rem}
+  .cert{padding:1.8rem}
+  .seal{width:84px;height:84px}
+  .seal b{font-size:1.5rem}
+  .foot-top{grid-template-columns:1fr}
+  .heritage-tag{left:.8rem}
+  .protect-photo::before{inset:.8rem -.6rem -.8rem .8rem}
+  .mobile-bar{display:grid;grid-template-columns:1fr 1fr;position:fixed;bottom:0;left:0;right:0;z-index:60}
+  .mobile-bar a{padding:1rem;text-align:center;font-weight:800}
+  .mobile-bar a:first-child{background:var(--ink);color:var(--orange)}
+  .mobile-bar a:last-child{background:var(--orange);color:var(--ink)}
+  footer{padding-bottom:3.5rem}
+}
+</style>
+</head>
+<body>
+
+<div class="util">
+  <div class="wrap">
+    <span>Serving <b>Calgary and area</b> since 1967<span class="addr"> &nbsp;·&nbsp; 3611 27 St NE, Calgary, AB T1Y 5E4</span></span>
+    <a href="tel:4032911051">Free estimates: <b>403-291-1051</b></a>
+  </div>
+</div>
+
+<header class="site">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Ram Cleaning Services Ltd home"><img src="images/ram-logo.png" alt="Ram Cleaning Services Ltd"></a>
+    <nav class="main">
+      <a href="#services" data-tab="res">Residential</a>
+      <a href="#services" data-tab="com">Commercial</a>
+      <a href="#services" data-tab="oth">Other Services</a>
+      <a href="#estimate">Get an Estimate</a>
+      <a href="#estimate">Contact Us</a>
+    </nav>
+    <div class="head-cta">
+      <a class="head-phone" href="tel:4032911051"><small>Call us</small>403-291-1051</a>
+      <a class="btn btn-orange" href="#estimate">Get an Estimate</a>
+      <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<nav class="mnav">
+  <a href="#services" data-tab="res">Residential</a>
+  <a href="#services" data-tab="com">Commercial</a>
+  <a href="#services" data-tab="oth">Other Services</a>
+  <a href="#estimate">Get an Estimate</a>
+  <a href="#estimate">Contact Us</a>
+  <a href="tel:4032911051">Call 403-291-1051</a>
+</nav>
+
+<main id="top">
+<!-- HERO -->
+<section class="hero" style="padding-bottom:0">
+  <div class="wrap hero-grid">
+    <div class="hero-copy rv">
+      <div class="eyebrow">Ram Cleaning Services Ltd · Calgary, AB</div>
+      <div class="hero-frame">
+        <h1>Complete Cleaning <em>and Maintenance Care</em></h1>
+      </div>
+      <p class="lead">Our professionally trained technicians are supplied with all the latest equipment to take care of all your cleaning needs.</p>
+      <div class="hero-actions">
+        <a class="btn btn-orange" href="#estimate">Get a Free Estimate
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-line" href="tel:4032911051">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+          403-291-1051</a>
+      </div>
+      <div class="hero-proof">
+        <span><i></i>Bonded &amp; insured</span>
+        <span><i></i>Work guaranteed</span>
+        <span><i></i>100% satisfaction guarantee</span>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="photo"><img src="images/hero-carpet.jpg" alt="Ram technician cleaning carpet in a Calgary home"></div>
+      <div class="picker rv">
+        <h4>What do you need cleaned?</h4>
+        <div class="picker-toggle">
+          <button class="on" data-p="res">Residential</button>
+          <button data-p="com">Commercial</button>
+        </div>
+        <ul id="pickList"></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span>Carpet Cleaning</span><span>Area Rug Cleaning</span><span>Furniture &amp; Upholstery</span><span>Furnace &amp; Duct Cleaning</span><span>Window Cleaning</span><span>Power Washing</span><span>Tile &amp; Grout</span><span>Blind &amp; Drapery</span>
+    <span>Carpet Cleaning</span><span>Area Rug Cleaning</span><span>Furniture &amp; Upholstery</span><span>Furnace &amp; Duct Cleaning</span><span>Window Cleaning</span><span>Power Washing</span><span>Tile &amp; Grout</span><span>Blind &amp; Drapery</span>
+  </div>
+</div>
+
+<!-- CORE SERVICES -->
+<section id="core">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div>
+        <div class="eyebrow">What we're known for</div>
+        <h2>Five services Calgary calls us for most.</h2>
+      </div>
+      <p>From the carpet under your feet to the ducts behind your walls and the windows outside, one trusted Calgary team since 1967.</p>
+    </div>
+    <div class="core rv">
+      <div class="core-item active">
+        <img src="images/svc-carpet.jpg" alt="Carpet cleaning">
+        <div class="core-num">01</div>
+        <div class="core-label"><h3>Carpet Cleaning</h3>
+          <div class="core-body"><p>Residential and commercial carpet cleaning, carpet maintenance programs and carpet repairs.</p><a href="#estimate" data-svc="Carpet Cleaning">Get an estimate</a></div></div>
+      </div>
+      <div class="core-item">
+        <img src="images/svc-upholstery-rug.jpg" alt="Upholstery and area rug cleaning">
+        <div class="core-num">02</div>
+        <div class="core-label"><h3>Upholstery &amp; Area Rugs</h3>
+          <div class="core-body"><p>Furniture and upholstery cleaning plus area rug cleaning for homes and offices.</p><a href="#estimate" data-svc="Furniture & Upholstery Cleaning">Get an estimate</a></div></div>
+      </div>
+      <div class="core-item">
+        <img src="images/svc-furnace-duct.jpg" alt="Furnace and duct cleaning">
+        <div class="core-num">03</div>
+        <div class="core-label"><h3>Furnace &amp; Duct</h3>
+          <div class="core-body"><p>Furnace, duct and air service to keep your home's system clean.</p><a href="#estimate" data-svc="Furnace / Duct / Air Service">Get an estimate</a></div></div>
+      </div>
+      <div class="core-item">
+        <img src="images/svc-window.jpg" alt="Window cleaning">
+        <div class="core-num">04</div>
+        <div class="core-label"><h3>Window Cleaning</h3>
+          <div class="core-body"><p>Window cleaning for residential and commercial properties.</p><a href="#estimate" data-svc="Window Cleaning">Get an estimate</a></div></div>
+      </div>
+      <div class="core-item">
+        <img src="images/svc-power-wash.jpg" alt="Power washing">
+        <div class="core-num">05</div>
+        <div class="core-label"><h3>Power Washing</h3>
+          <div class="core-body"><p>Power washing as part of our outside and maintenance services.</p><a href="#estimate" data-svc="Power Washing">Get an estimate</a></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROTECTION -->
+<section class="protect">
+  <div class="wrap protect-grid">
+    <div class="rv">
+      <div class="eyebrow" style="color:var(--orange)">Peace of mind, in writing</div>
+      <h2>Your home and possessions are <span>protected.</span></h2>
+      <p class="intro">We insure your home and possessions against any service mishap, and you are protected by a 100% guarantee of satisfactory workmanship.</p>
+      <div class="protect-photo"><img src="images/protection.jpg" alt="Ram technician taking care in a client's home"></div>
+    </div>
+    <div class="cert rv">
+      <div class="cert-top">
+        <div><small>The Ram Guarantee</small><h3>What every visit includes</h3></div>
+        <div class="seal"><div><b>100%</b><span>Satisfaction</span></div></div>
+      </div>
+      <ol>
+        <li>Technicians are bonded and insured</li>
+        <li>Work guaranteed</li>
+        <li>Quality control inspections</li>
+        <li>Trained technicians</li>
+        <li>GPS monitored vehicles</li>
+        <li>100% satisfaction guarantee on workmanship</li>
+        <li>Home and possessions insured against any service mishap</li>
+      </ol>
+      <div class="cert-foot">
+        <div class="cor"><i>COR</i>Alberta Construction Safety Association</div>
+        <span>Ram Cleaning Services Ltd · Since 1967</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE INDEX -->
+<section class="index" id="services">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div>
+        <div class="eyebrow">Full service list</div>
+        <h2>Homes, businesses and everything outside.</h2>
+      </div>
+      <p>Pick a category to see every service we offer, then request your free estimate online in under a minute.</p>
+    </div>
+    <div class="tabs" role="tablist">
+      <button class="on" data-tab="res">Residential<sup>08</sup></button>
+      <button data-tab="com">Commercial<sup>09</sup></button>
+      <button data-tab="oth">Other Services<sup>03</sup></button>
+    </div>
+
+    <div class="panel on" id="p-res">
+      <ul class="rows">
+        <li><a href="#estimate" data-svc="Carpet Cleaning"><span>01</span>Carpet Cleaning<em>→</em></a></li>
+        <li><a href="#estimate" data-svc="Area Rug Cleaning"><span>02</span>Area Rug Cleaning<em>→</em></a></li>
+        <li><a href="#estimate" data-svc="Carpet Repairs"><span>03</span>Carpet Repairs<em>→</em></a></li>
+        <li><a href="#estimate" data-svc="Furniture & Upholstery Cleaning"><span>04</span>Furniture &amp; Upholstery Cleaning<em>→</em></a></li>
+        <li><a href="#estimate" data-svc="Maid Service / Housecleaning"><span>05</span>Maid Service / Housecleaning<em>→</em></a></li>
+        <li><a href="#estimate" data-svc="Blind / Drapery Cleaning"><span>06</span>Blind / Drapery Cleaning<em>→</em></a></li>
+        <li><a href="#estimate" data-svc="Window Cleaning"><span>07</span>Window Cleaning<em>→</em></a></li>
+        <li><a href="#estimate" data-svc="Tile & Grout Cleaning"><span>08</span>Tile &amp; Grout Cleaning<em>→</em></a></li>
+      </ul>
+      <div class="panel-side">
+        <img class="ic" src="images/icon-cleaning.png" alt="">
+        <h4>Residential Cleaning Services</h4>
+        <p>Technicians are bonded and insured. Work guaranteed. Serving Calgary and area since 1967.</p>
+        <a class="btn btn-orange" href="#estimate" data-type="Residential">Residential estimate</a>
+      </div>
+    </div>
+
+    <div class="panel" id="p-com">
+      <ul class="rows">
+        <li><a href="#estimate" data-svc="Commercial Carpet Cleaning"><span>01</span>Commercial Carpet Cleaning<em>→</em></a></li>
+        <li><a href="#estimate" data-svc="Carpet Maintenance Programs"><span>02</span>Carpet Maintenance Programs<em>→</em></a></li>
+        <li><a href="#estimate" data-svc="Carpet Repairs"><span>03</span>Carpet Repairs<em>→</em></a></li>
+        <li><a href="#estimate" data-svc="Furniture & Upholstery Cleaning"><span>04</span>Furniture &amp; Upholstery<em>→</em></a></li>
+        <li><a href="#estimate" data-svc="Blind / Drapery Cleaning"><span>05</span>Blind &amp; Drapery<em>→</em></a></li>
+        <li><a href="#estimate" data-svc="Window Cleaning"><span>06</span>Window Cleaning<em>→</em></a></li>
+        <li><a href="#estimate" data-svc="Office Cleaning"><span>07</span>Office Cleaning<em>→</em></a></li>
+        <li><a href="#estimate" data-svc="Strip Seal Wax"><span>08</span>Strip Seal Wax<em>→</em></a></li>
+        <li><a href="#estimate" data-svc="Tile & Grout Cleaning"><span>09</span>Tile &amp; Grout Cleaning<em>→</em></a></li>
+      </ul>
+      <div class="panel-side">
+        <img class="ph" src="images/HOME_Ram_F.jpg" alt="Office space cared for by Ram Cleaning Services">
+        <h4>Commercial Cleaning Services</h4>
+        <p>Offices and commercial spaces across Calgary, from carpet maintenance programs to strip, seal and wax.</p>
+        <a class="btn btn-orange" href="#estimate" data-type="Commercial">Commercial estimate</a>
+      </div>
+    </div>
+
+    <div class="panel" id="p-oth">
+      <ul class="rows">
+        <li><a href="#estimate" data-svc="Furnace / Duct / Air Service"><span>01</span><div>Furnace / Duct / Air Service<small>Furnace and duct cleaning, air service</small></div><em>→</em></a></li>
+        <li><a href="#estimate" data-svc="Flood Restoration"><span>02</span><div>Flood Restoration</div><em>→</em></a></li>
+        <li><a href="#estimate" data-svc="Power Washing"><span>03</span><div>Outside &amp; Maintenance<small>Lawn care, snow removal, power washing, drain cleaning, junk removal</small></div><em>→</em></a></li>
+      </ul>
+      <div class="panel-side">
+        <h4>One call for the whole property</h4>
+        <p>Ram's other service lines cover your furnace and ducts, flood restoration, and outside maintenance all year round.</p>
+        <a class="btn btn-orange" href="#estimate">Request an estimate</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HERITAGE -->
+<section class="heritage">
+  <div class="wrap">
+    <div class="rv">
+      <div class="year-row">
+        <div class="year">1967</div>
+        <div class="year-count"><b id="yrs">59</b><span>years in Calgary</span></div>
+      </div>
+      <h2>Calgary's cleaning and maintenance team since 1967.</h2>
+      <p>Ram Cleaning Services, Complete Cleaning and Maintenance Care, has been operating in Calgary and area since 1967. Quality control inspections, ongoing technician training and GPS monitored vehicles mean every visit meets the same standard.</p>
+      <div class="hero-actions"><a class="btn btn-line" href="#estimate">Book your free estimate</a></div>
+    </div>
+    <div class="heritage-photo rv">
+      <img src="images/heritage-van.jpg" alt="Ram service vehicle at a Calgary home">
+      <div class="heritage-tag">3611 27 St NE · <b>Calgary</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="voices">
+  <div class="wrap">
+    <div class="voices-head rv">
+      <div>
+        <div class="eyebrow">Client stories</div>
+        <h2>Calgary homeowners keep calling us back.</h2>
+      </div>
+      <div class="arrows"><button id="prev" aria-label="Previous">←</button><button id="next" aria-label="Next">→</button></div>
+    </div>
+    <div class="track" id="track">
+      <article class="quote"><div><div class="mark">“</div><blockquote>It was the best service I have received and my carpets came out spotless.</blockquote><p>Would recommend Ram to friends and coworkers.</p></div><cite>F Heldt <span class="stars">★★★★★</span></cite></article>
+      <article class="quote"><div><div class="mark">“</div><blockquote>They did an excellent job on the entire house.</blockquote><p>A first-time customer with a friendly, helpful technician.</p></div><cite>Kevin, Calgary <span class="stars">★★★★★</span></cite></article>
+      <article class="quote"><div><div class="mark">“</div><blockquote>He did the best job I have ever had done.</blockquote><p>Plans to request the same technician again.</p></div><cite>D Maguire <span class="stars">★★★★★</span></cite></article>
+      <article class="quote"><div><div class="mark">“</div><blockquote>Very professional, polite, and thorough.</blockquote><p>Ram is their go-to whenever cleaning is needed.</p></div><cite>C Tworek <span class="stars">★★★★★</span></cite></article>
+      <article class="quote"><div><div class="mark">“</div><blockquote>Kept working on all those stubborn stains.</blockquote><p>Two kids, two pets and a berber rug that came out looking new.</p></div><cite>M Fulop <span class="stars">★★★★★</span></cite></article>
+    </div>
+  </div>
+</section>
+
+<!-- ESTIMATE -->
+<section class="estimate" id="estimate" style="padding-bottom:0">
+  <div class="wrap">
+    <div class="est-side rv">
+      <div class="eyebrow" style="color:var(--orange)">Get an Estimate</div>
+      <h2>Your free estimate, without the phone tag.</h2>
+      <p>Send us the details and we'll get back to you, or call for a free estimate right now.</p>
+      <ul class="contact-list">
+        <li><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></i><div><small>Phone</small><b><a href="tel:4032911051">403-291-1051</a></b></div></li>
+        <li><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-6.5 8-13a8 8 0 1 0-16 0c0 6.5 8 13 8 13z"/><circle cx="12" cy="9" r="3"/></svg></i><div><small>Office</small><b>3611 27 St NE, Calgary, AB T1Y 5E4</b></div></li>
+        <li><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg></i><div><small>Service area</small><b>Calgary and area</b></div></li>
+      </ul>
+      <iframe class="map" loading="lazy" title="Ram Cleaning Services location" src="https://www.google.com/maps?q=3611+27+St+NE,+Calgary,+AB+T1Y+5E4&output=embed"></iframe>
+    </div>
+    <form class="est rv" onsubmit="event.preventDefault();this.querySelector('.form-note').textContent='Thank you! Your request is ready to send. We will contact you shortly.';">
+      <h3>Request a free estimate</h3>
+      <div class="field full"><label>Property type</label>
+        <div class="seg"><input type="radio" name="type" id="t-res" value="Residential" checked><label for="t-res">Residential</label><input type="radio" name="type" id="t-com" value="Commercial"><label for="t-com">Commercial</label></div>
+      </div>
+      <div class="field"><label for="f-name">Full name</label><input id="f-name" required></div>
+      <div class="field"><label for="f-phone">Phone</label><input id="f-phone" type="tel" required></div>
+      <div class="field"><label for="f-email">Email</label><input id="f-email" type="email"></div>
+      <div class="field"><label for="f-svc">Service</label>
+        <select id="f-svc">
+          <option>Carpet Cleaning</option><option>Area Rug Cleaning</option><option>Carpet Repairs</option><option>Furniture &amp; Upholstery Cleaning</option><option>Maid Service / Housecleaning</option><option>Blind / Drapery Cleaning</option><option>Window Cleaning</option><option>Tile &amp; Grout Cleaning</option><option>Commercial Carpet Cleaning</option><option>Carpet Maintenance Programs</option><option>Office Cleaning</option><option>Strip Seal Wax</option><option>Furnace / Duct / Air Service</option><option>Flood Restoration</option><option>Power Washing</option><option>Other</option>
+        </select></div>
+      <div class="field full"><label for="f-msg">Tell us about the job</label><textarea id="f-msg" rows="4" placeholder="Rooms, rugs, square footage, preferred dates..."></textarea></div>
+      <button class="btn btn-orange" type="submit">Send my estimate request
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      <p class="form-note">Prefer to talk? Call 403-291-1051 for a free estimate.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <img src="images/ram-logo.png" alt="Ram Cleaning Services Ltd">
+        <p>Complete Cleaning and Maintenance Care. Serving Calgary and area since 1967.</p>
+        <div class="social">
+          <a href="https://www.facebook.com/RamCleaningServices" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H8v4h2v8h4v-8h3l1-4h-4V8z"/></svg></a>
+          <a href="https://twitter.com/Ram_Service" target="_blank" rel="noopener" aria-label="X / Twitter"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.8 3h3.1l-6.8 7.8L22 21h-6.3l-4.9-6.4L5.2 21H2.1l7.3-8.3L1.8 3h6.4l4.4 5.9L17.8 3zm-1.1 16.2h1.7L7.4 4.7H5.6l11.1 14.5z"/></svg></a>
+        </div>
+      </div>
+      <div><h5>Residential</h5><ul>
+        <li><a href="#services">Carpet Cleaning</a></li><li><a href="#services">Area Rug Cleaning</a></li><li><a href="#services">Furniture &amp; Upholstery</a></li><li><a href="#services">Maid Service</a></li><li><a href="#services">Window Cleaning</a></li><li><a href="#services">Tile &amp; Grout</a></li></ul></div>
+      <div><h5>Commercial</h5><ul>
+        <li><a href="#services">Commercial Carpet</a></li><li><a href="#services">Maintenance Programs</a></li><li><a href="#services">Office Cleaning</a></li><li><a href="#services">Strip Seal Wax</a></li><li><a href="#services">Blind &amp; Drapery</a></li></ul></div>
+      <div><h5>Other Services</h5><ul>
+        <li><a href="#services">Furnace / Duct / Air</a></li><li><a href="#services">Flood Restoration</a></li><li><a href="#services">Outside &amp; Maintenance</a></li><li><a href="#services">Power Washing</a></li></ul></div>
+      <div><h5>Contact</h5><ul>
+        <li><a href="tel:4032911051">403-291-1051</a></li><li>3611 27 St NE<br>Calgary, AB T1Y 5E4</li><li><a href="#estimate">Get an Estimate</a></li></ul></div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="cy">2026</span> Ram Cleaning Services Ltd. All rights reserved.</span>
+      <nav><a href="#">Privacy Policy</a><a href="#">Site Map</a><a href="#estimate">Contact Us</a></nav>
+      <span class="credit">Design by <a href="https://cleaningdigital.ca/" target="_blank" rel="noopener">Cleaning Digital</a>.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mobile-bar"><a href="tel:4032911051">Call 403-291-1051</a><a href="#estimate">Free Estimate</a></div>
+
+<script>
+// picker
+const lists={
+  res:['Carpet Cleaning','Area Rug Cleaning','Carpet Repairs','Furniture & Upholstery Cleaning','Maid Service / Housecleaning','Blind / Drapery Cleaning','Window Cleaning','Tile & Grout Cleaning'],
+  com:['Commercial Carpet Cleaning','Carpet Maintenance Programs','Carpet Repairs','Furniture & Upholstery Cleaning','Blind / Drapery Cleaning','Window Cleaning','Office Cleaning','Strip Seal Wax','Tile & Grout Cleaning']
+};
+const pl=document.getElementById('pickList');
+function fill(k){pl.innerHTML=lists[k].map(s=>`<li><a href="#estimate" data-svc="${s}" data-type="${k==='res'?'Residential':'Commercial'}">${s.replace('&','&amp;')}</a></li>`).join('');}
+fill('res');
+document.querySelectorAll('.picker-toggle button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.picker-toggle button').forEach(x=>x.classList.toggle('on',x===b));fill(b.dataset.p);});
+
+// preselect service in form
+document.addEventListener('click',e=>{
+  const a=e.target.closest('[data-svc],[data-type]');if(!a)return;
+  const s=a.dataset.svc,t=a.dataset.type;
+  if(s){const sel=document.getElementById('f-svc');[...sel.options].forEach(o=>{if(o.text===s)sel.value=o.value});}
+  if(t){document.getElementById(t==='Commercial'?'t-com':'t-res').checked=true;}
+});
+
+// core accordion
+document.querySelectorAll('.core-item').forEach(it=>{
+  const act=()=>{document.querySelectorAll('.core-item').forEach(x=>x.classList.toggle('active',x===it))};
+  it.addEventListener('mouseenter',()=>{if(matchMedia('(min-width:1081px)').matches)act()});
+  it.addEventListener('click',act);
+});
+
+// tabs
+function showTab(k){
+  document.querySelectorAll('.tabs button').forEach(b=>b.classList.toggle('on',b.dataset.tab===k));
+  document.querySelectorAll('.panel').forEach(p=>p.classList.toggle('on',p.id==='p-'+k));
+}
+document.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>showTab(b.dataset.tab));
+document.querySelectorAll('nav [data-tab]').forEach(a=>a.addEventListener('click',()=>{showTab(a.dataset.tab);document.querySelector('.mnav').classList.remove('open')}));
+
+// mobile nav
+document.querySelector('.burger').onclick=()=>document.querySelector('.mnav').classList.toggle('open');
+document.querySelectorAll('.mnav a').forEach(a=>a.addEventListener('click',()=>document.querySelector('.mnav').classList.remove('open')));
+
+// testimonials arrows
+const tr=document.getElementById('track');
+document.getElementById('next').onclick=()=>tr.scrollBy({left:440,behavior:'smooth'});
+document.getElementById('prev').onclick=()=>tr.scrollBy({left:-440,behavior:'smooth'});
+
+// years + year
+const now=new Date().getFullYear();
+document.getElementById('yrs').textContent=now-1967;
+document.getElementById('cy').textContent=now;
+
+// reveal
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
